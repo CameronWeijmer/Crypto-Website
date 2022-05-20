@@ -8,18 +8,19 @@
 }
 
 body {
-  background-color: #e3edef;
+  /* background-color: #e3edef; */
+  background-image: url("../img/background.png");
 }
 
 nav {
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 0 0 15rem;
   display: flex;
   align-items: center;
+  word-spacing: 2.5rem;
 }
 
-logo {
-  width: 0px;
+.logo {
   cursor: pointer;
 }
 
@@ -29,23 +30,28 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+  letter-spacing: 0.25rem;
   margin: 10px 20px;
 }
 
 nav ul li a {
-  color: #000000;
+  color: #e3edef;
   font-size: 30px;
   text-decoration: none;
 }
 
-nav .btn{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    border: 1px solid rgb(0, 0, 0);
-    padding: 10px 30px;
-    border-radius: 20px;
+nav .btn {
+  color: #e3edef;
+  text-decoration: none;
+  border: 1px solid #e3edef;
+  padding: 10px 30px;
+  border-radius: 20px;
 }
 
-.btn{
-    margin-right: 5rem;
+nav img {
+  padding-right: 2.5rem;
+}
+
+.btn {
+  margin-right: 10rem;
 }

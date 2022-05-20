@@ -55,21 +55,35 @@ nav img {
   margin-right: 10rem;
 }
 
-@media only screen and (max-width:700px){
-        nav ul{
-        width: 100%;
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-    }
-    nav ul li{
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+#img_menu_icon {
+  width: 100;
+  cursor: pointer;
+  filter: invert(1);
+  display: none;
+}
 
-    .logo{
-        display: none;
-    }
+@media only screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+  }
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  #img_menu_icon {
+    display: block;
+    filter: invert(1);
+  }
 }

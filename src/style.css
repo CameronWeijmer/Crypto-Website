@@ -17,7 +17,6 @@ nav {
   padding: 20px;
   display: flex;
   align-items: center;
-  word-spacing: 2.5rem;
   justify-content: center;
 }
 
@@ -29,7 +28,19 @@ nav ul {
   flex: 1;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin-right: 2rem;
 }
+
+nav a{
+  margin: 2rem;
+}
+
+nav a:hover{
+  color: #dc961c;
+  transition: 0.5s linear;
+}
+
 
 nav ul li {
   letter-spacing: 0.25rem;
@@ -65,7 +76,7 @@ nav img {
   nav ul {
     width: 100%;
     position: absolute;
-    top: 75px;
+    top: 140px;
     right: 0;
     z-index: 2;
     overflow: hidden;
@@ -93,5 +104,8 @@ nav img {
     padding: 10px 30px;
     border-radius: 30px;
     font-size: 20px;
+  }
+  body {
+    background-image: url("../img/background.png");
   }
 }

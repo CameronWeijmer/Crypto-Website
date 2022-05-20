@@ -85,5 +85,13 @@ nav img {
   #img_menu_icon {
     display: block;
     filter: invert(1);
+    height: 50px;
+  }
+
+  nav .btn {
+    border: 1px solid #e3edef;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 20px;
   }
 }

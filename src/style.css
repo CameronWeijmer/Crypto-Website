@@ -13,10 +13,11 @@ body {
 
 nav {
   width: 100%;
-  padding: 20px 0 0 15rem;
+  padding: 20px;
   display: flex;
   align-items: center;
   word-spacing: 2.5rem;
+  justify-content: center;
 }
 
 .logo {
@@ -25,10 +26,11 @@ nav {
 
 nav ul {
   flex: 1;
+  display: flex;
+  flex-direction: row;
 }
 
 nav ul li {
-  display: inline-block;
   letter-spacing: 0.25rem;
   margin: 10px 20px;
 }
@@ -51,10 +53,6 @@ nav img {
   padding-right: 2.5rem;
 }
 
-.btn {
-  margin-right: 10rem;
-}
-
 #img_menu_icon {
   width: 100;
   cursor: pointer;
@@ -71,6 +69,7 @@ nav img {
     z-index: 2;
     overflow: hidden;
     transition: max-height 1s ease-in-out;
+    flex-direction: column;
   }
   nav ul li {
     display: block;

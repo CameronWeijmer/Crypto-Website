@@ -62,7 +62,7 @@ nav ul {
   list-style-type: none;
 }
 
-#menuList{
+#menuList {
   padding-top: 1rem;
 }
 
@@ -70,7 +70,7 @@ nav .btn {
   color: #e3edef;
   text-decoration: none;
   border: 1px solid #e3edef;
-  padding: 6px 21px;
+  padding: 8px 21px;
   border-radius: 20px;
 }
 
@@ -84,6 +84,14 @@ nav img {
   cursor: pointer;
   filter: invert(1);
   display: none;
+}
+
+#title {
+  color: #e3edef;
+}
+
+desc {
+  color: #e3edef;
 }
 
 @media only screen and (max-width: 700px) {

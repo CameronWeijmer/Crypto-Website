@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Crypto Stats</title>
 </head>
 
@@ -15,7 +13,9 @@
 
     <div class="container">
         <nav>
-            <img src="./img/coin_logo.png" alt="Logo" class="logo" height="100">
+            <a id="backlink" href="index.en.html">
+                <img src="./img/coin_logo.png" alt="Logo" class="logo" height="100">
+            </a>
             <ul id="menuList">
                 <li><a href="#">Crypto</a></li>
                 <li><a href="#">Bitcoin</a></li>
@@ -25,9 +25,14 @@
             <img id="img_menu_icon" src="./img/menu_icon.png" alt="Dropdown-menu" height="20" onclick="togglemenu()">
             <a href="#" class="btn">EN</a>
         </nav>
+
     </div>
-    <!-- <img src="./img/bitcoin-5675758.svg" alt="Picture of Bitcoin" height="300"> -->
-    <script src="./src/app.js"></script>
+
+    <!-- link to Vanilla JS -->
+    <script defer src="./src/index.js"></script>
+    <!-- link to node.js -->
+    <script defer src="./src/app.js"></script>
+
 </body>
 
 

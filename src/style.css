@@ -14,10 +14,14 @@ body {
 
 nav {
   width: 100%;
-  padding: 20px;
+  padding: 0.5rem 3rem 0rem 3rem;
   display: flex;
-  align-items: center;
   justify-content: center;
+}
+
+#backlink {
+  padding: 0;
+  margin: 0;
 }
 
 .logo {
@@ -32,15 +36,16 @@ nav ul {
   margin-right: 2rem;
 }
 
-nav a{
+nav a {
   margin: 2rem;
+  justify-content: space-evenly;
+  color: #e3edef;
+  transition: color 0.5s linear;
 }
 
-nav a:hover{
+nav a:hover {
   color: #dc961c;
-  transition: 0.5s linear;
 }
-
 
 nav ul li {
   letter-spacing: 0.25rem;
@@ -53,16 +58,25 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul {
+  list-style-type: none;
+}
+
+#menuList{
+  padding-top: 1rem;
+}
+
 nav .btn {
   color: #e3edef;
   text-decoration: none;
   border: 1px solid #e3edef;
-  padding: 10px 30px;
+  padding: 6px 21px;
   border-radius: 20px;
 }
 
 nav img {
   padding-right: 2.5rem;
+  padding-left: 1rem;
 }
 
 #img_menu_icon {

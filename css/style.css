@@ -88,10 +88,32 @@ nav img {
 
 #title {
   color: #e3edef;
+  font-size: 4rem;
+  line-height: 4rem;
+  word-spacing: .5rem;
 }
 
-desc {
+#desc {
   color: #e3edef;
+  line-height: 5rem;
+}
+
+#crypto_span {
+  color: #dc961c;
+}
+
+#and_span{
+  color: #dc961c;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: left;
+  align-items: left;
+  margin-left: 2%;
+  padding-top: 10rem;
 }
 
 @media only screen and (max-width: 700px) {
@@ -131,3 +153,4 @@ desc {
     background-image: url("../img/background.png");
   }
 }
+

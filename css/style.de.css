@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto&display=swap');
 
 * {
   margin: 0;
@@ -90,19 +90,28 @@ nav img {
   color: #e3edef;
   font-size: 4rem;
   line-height: 4rem;
-  word-spacing: .5rem;
+  word-spacing: 0.5rem;
 }
 
 #desc {
-  color: #e3edef;
-  line-height: 5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #c2c0c0;
+  padding-top: 2rem;
+  line-height: 1rem;
+  font-weight: 900;
+}
+
+#span_desc{
+  font-family: 'Roboto', sans-serif;
+  line-height: 2rem;
+  font-weight: 900;
 }
 
 #crypto_span {
   color: #dc961c;
 }
 
-#and_span{
+#and_span {
   color: #dc961c;
 }
 
@@ -113,7 +122,7 @@ nav img {
   justify-content: left;
   align-items: left;
   margin-left: 2%;
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
 @media only screen and (max-width: 700px) {
@@ -150,7 +159,6 @@ nav img {
     font-size: 20px;
   }
   body {
-    background-image: url("../img/background.png");
+    background-image: url("../assets/background.png");
   }
 }
-

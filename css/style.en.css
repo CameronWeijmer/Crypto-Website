@@ -43,6 +43,7 @@ nav ul {
   justify-content: center;
   margin-right: 2rem;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 a {
@@ -65,10 +66,6 @@ nav ul li a {
   color: #e3edef;
   font-size: 30px;
   text-decoration: none;
-}
-
-nav ul {
-  list-style-type: none;
 }
 
 #menuList {

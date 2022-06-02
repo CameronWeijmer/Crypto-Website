@@ -2,6 +2,7 @@ let menuList = document.getElementById('menuList');
 
 menuList.style.maxHeight = "0px";
 
+// Function to toggle the menulist
 function togglemenu(){
     if(menuList.style.maxHeight == "0px") {
         menuList.style.maxHeight = "500px";

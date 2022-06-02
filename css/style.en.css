@@ -7,6 +7,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
 body {
   background-image: url("../assets/background.png");
   background-size: cover;
@@ -36,14 +44,14 @@ nav ul {
   margin-right: 2rem;
 }
 
-nav a {
+a {
   margin: 2rem;
   justify-content: space-evenly;
   color: #e3edef;
   transition: color 0.5s linear;
 }
 
-nav a:hover {
+a:hover {
   color: #dc961c;
 }
 
@@ -72,6 +80,11 @@ nav .btn {
   border: 1px solid #e3edef;
   padding: 8px 21px;
   border-radius: 20px;
+  transition: border 0.5s linear;
+}
+
+nav .btn:hover{
+  border: 1px solid #dc961c;
 }
 
 nav img {

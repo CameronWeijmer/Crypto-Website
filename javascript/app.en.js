@@ -16,3 +16,4 @@ fetch(
       "At the moment we are not able to display the Bitcoin price, please be patient."
     );
   });
+  

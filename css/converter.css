@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url("../assets/background.png");
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  padding: 0.5rem 3rem 0rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+#backlink {
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+nav ul {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 2rem;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+a {
+  margin: 2rem;
+  justify-content: space-evenly;
+  color: #e3edef;
+  transition: color 0.5s linear;
+}
+
+a:hover {
+  color: #dc961c;
+}
+
+nav ul li {
+  letter-spacing: 0.25rem;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #e3edef;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#menuList {
+  padding-top: 1rem;
+}
+
+nav .btn {
+  color: #e3edef;
+  text-decoration: none;
+  border: 1px solid #e3edef;
+  padding: 8px 21px;
+  border-radius: 20px;
+  transition: border 0.5s linear;
+}
+
+nav .btn:hover {
+  border: 1px solid #dc961c;
+}
+
+nav img {
+  padding-right: 2.5rem;
+  padding-left: 1rem;
+}
+
+#img_menu_icon {
+  width: 100;
+  cursor: pointer;
+  filter: invert(1);
+  display: none;
+}

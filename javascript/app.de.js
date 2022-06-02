@@ -1,14 +1,14 @@
 let btc = document.getElementById("bitcoin_price");
 
 fetch(
-  "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=chf"
+  "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=eur"
 )
   .then((res) => {
     return res.json();
   })
   .then((data) => {
     // console.log(data.bitcoin.chf);
-    btc.innerText = "CHF " + data.bitcoin.chf;
+    btc.innerText = "EUR " + data.bitcoin.eur;
   })
   .catch((err) => {
     console.error(err);

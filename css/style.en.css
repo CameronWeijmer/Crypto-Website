@@ -7,11 +7,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
@@ -83,7 +83,7 @@ nav .btn {
   transition: border 0.5s linear;
 }
 
-nav .btn:hover{
+nav .btn:hover {
   border: 1px solid #dc961c;
 }
 
@@ -136,6 +136,33 @@ nav img {
   align-items: left;
   margin-left: 4%;
   padding-top: 5rem;
+}
+
+.btc_checker_div {
+  color: #e3edef;
+  display: flex;
+  padding: 3rem 0rem 0rem 5rem;
+}
+
+.btc_bubble {
+  border: solid #dc961c 2px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+#title_btc{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  color: #dc961c;
+}
+
+#bitcoin_price{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 0rem 0rem;
+  font-size: 2rem;
 }
 
 @media only screen and (max-width: 700px) {

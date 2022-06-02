@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto&display=swap");
 
 * {
   margin: 0;
@@ -94,15 +94,15 @@ nav img {
 }
 
 #desc {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #c2c0c0;
   padding-top: 2rem;
   line-height: 1rem;
   font-weight: 900;
 }
 
-#span_desc{
-  font-family: 'Roboto', sans-serif;
+#span_desc {
+  font-family: "Roboto", sans-serif;
   line-height: 2rem;
   font-weight: 900;
 }
@@ -121,7 +121,7 @@ nav img {
   min-height: 100vh;
   justify-content: left;
   align-items: left;
-  margin-left: 2%;
+  margin-left: 4%;
   padding-top: 5rem;
 }
 

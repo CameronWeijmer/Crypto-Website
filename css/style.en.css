@@ -142,7 +142,8 @@ nav img {
 .btc_checker_div {
   color: #e3edef;
   display: flex;
-  padding: 3rem 0rem 0rem 5rem;
+  justify-content: left;
+  padding: 2rem 0rem 0rem 10.5rem;
 }
 
 .btc_bubble {

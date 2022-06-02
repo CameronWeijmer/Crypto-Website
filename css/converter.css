@@ -16,8 +16,7 @@ html {
 }
 
 body {
-  background-image: url("../assets/background.png");
-  background-size: cover;
+    background-color: #0f002b;
 }
 
 nav {

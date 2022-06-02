@@ -11,5 +11,8 @@ fetch(
     btc.innerText = "$" + data.bitcoin.usd;
   })
   .catch((err) => {
-    alert("At the moment");
+    console.error(err);
+    alert(
+      "At the moment we are not able to display the Bitcoin price, please be patient."
+    );
   });

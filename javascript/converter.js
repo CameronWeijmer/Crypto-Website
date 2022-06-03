@@ -16,3 +16,10 @@ fetch(
     });
     return coins;
   });
+
+// Gets name of selected currency
+function currname() {
+  const select = document.getElementById("selectCurrencies");
+  const option = select.options[select.selectedIndex];
+  document.getElementById("coin_name").innerText = option.text;
+}

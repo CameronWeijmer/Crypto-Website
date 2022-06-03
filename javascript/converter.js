@@ -6,7 +6,6 @@ fetch(
 )
   .then((res) => res.json())
   .then((data) => {
-    // select.innerHTML = "";
     data.forEach((coin) => {
       const option = document.createElement("option");
       option.value = coin.id;
@@ -25,27 +24,28 @@ function currname() {
 }
 
 function calc() {
+  const getText = document.getElementById("curreny").value;
+  let currency = getText.toLowerCase();
   const select = document.getElementById("selectCurrencies");
   const input = document.getElementById("input");
   const option = select.options[select.selectedIndex];
   const coinId = option.value;
-  const url = `https://api.coingecko.com/api/v3/simple/price?ids=${coinId}&vs_currencies=usd`;
+  const url = `https://api.coingecko.com/api/v3/simple/price?ids=${coinId}&vs_currencies=${currency}`;
   fetch(url)
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      let coin_price = data[coinId].usd;
+      let coin_price = data[coinId][currency];
       let amount = parseInt(document.getElementById("input").value);
       const result = amount / coin_price;
       const resultText = document.getElementById("answer");
-      resultText.innerText = result;
+      resultText.innerText = result.toFixed(5) + " " + coinId.toUpperCase();
       const showBox = document.getElementById("result");
       showBox.style.visibility = "visible";
     });
 
-  debugger;
-  if (input.value.length == 0 || !select.value) {
+  if (input.value.length == 0 || !select.value || !currency.value.length) {
     const fail = "Please fill out all of the Boxes...";
     const resultText = document.getElementById("answer");
     resultText.innerText = fail;

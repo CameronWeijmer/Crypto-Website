@@ -165,7 +165,7 @@ nav img {
   font-size: 1.5rem;
 }
 
-#br_id{
+#br_id {
   display: none;
 }
 
@@ -230,13 +230,44 @@ nav img {
     padding-top: 2rem;
     line-height: 1.25rem;
   }
-  
+
   #span_desc {
     line-height: 1.25rem;
   }
 
-  #br_id{
+  #br_id {
     display: block;
+  }
+
+  .btc_bubble {
+    border: solid #dc961c 2px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding-left: 5rem;
+  }
+
+  .btc_checker_div {
+    color: #e3edef;
+    display: flex;
+    justify-content: center;
+    padding: 8rem 0rem 0rem 0rem
+  }
+
+  #title_btc {
+    display: flex;
+    justify-content: right;
+    padding-top: 2rem;
+    padding-right: .75rem;
+    color: #dc961c;
+    font-size: 2rem;
+  }
+
+  #bitcoin_price {
+    display: flex;
+    justify-content: right;
+    padding: 0rem 1.5rem 0rem 0rem;
+    font-size: 1.5rem;
   }
 
 }

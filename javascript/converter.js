@@ -40,7 +40,11 @@ function calc() {
       let amount = parseInt(document.getElementById("input").value);
       const result = amount / coin_price;
       const resultText = document.getElementById("answer");
-      resultText.innerText = result.toFixed(5) + " " + coinId.toUpperCase();
+      if (coinId == "bitcoin") {
+        resultText.innerText = result.toFixed(6) + " " + coinId.toUpperCase();
+      } else {
+        resultText.innerText = result.toFixed(4) + " " + coinId.toUpperCase();
+      }
       const showBox = document.getElementById("result");
       showBox.style.visibility = "visible";
     });

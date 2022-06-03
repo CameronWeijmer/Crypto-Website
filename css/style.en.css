@@ -165,7 +165,15 @@ nav img {
   font-size: 1.5rem;
 }
 
+#br_id{
+  display: none;
+}
+
 @media only screen and (max-width: 700px) {
+  body {
+    background-image: url("../assets/background.png");
+  }
+
   nav ul {
     width: 100%;
     position: absolute;
@@ -184,12 +192,15 @@ nav img {
     margin-bottom: 10px;
   }
 
-  .logo {
-    display: none;
+  nav .btn {
+    border: 1px solid #e3edef;
+    padding: 6px 25px;
+    border-radius: 30px;
+    font-size: 20px;
   }
 
-  .site {
-    padding-top: 0rem;
+  .logo {
+    display: none;
   }
 
   #img_menu_icon {
@@ -199,19 +210,33 @@ nav img {
     margin-top: 2rem;
   }
 
-  .menuicon{
+  .menuicon {
     display: flex;
     justify-content: space-evenly;
   }
 
-  nav .btn {
-    border: 1px solid #e3edef;
-    padding: 6px 25px;
-    border-radius: 30px;
-    font-size: 20px;
+  .site {
+    padding-top: 0rem;
   }
 
-  body {
-    background-image: url("../assets/background.png");
+  #title {
+    color: #e3edef;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    word-spacing: 0.5rem;
   }
+
+  #desc {
+    padding-top: 2rem;
+    line-height: 1.25rem;
+  }
+  
+  #span_desc {
+    line-height: 1.25rem;
+  }
+
+  #br_id{
+    display: block;
+  }
+
 }

@@ -47,6 +47,11 @@ function calc() {
       }
       const showBox = document.getElementById("result");
       showBox.style.visibility = "visible";
+    })
+    .catch((err) => {
+      const fail = "Unknown Error, please try again";
+      const resultText = document.getElementById("answer");
+      resultText.innerText = err;
     });
 
   if (input.value.length == 0 || !select.value || !currency.value.length) {

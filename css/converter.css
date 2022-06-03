@@ -103,7 +103,7 @@ nav img {
 .head {
   width: 100%;
   text-align: center;
-  background: #dc961c;
+  background: #e89403;
   color: #ffffff;
   padding: 10px 0 10px;
   margin-bottom: 25px;
@@ -131,7 +131,7 @@ button {
   width: 100%;
   height: 75px;
   margin-bottom: 25px;
-  font-size: 18px;
+  font-size: 2rem;
 }
 
 button:focus {
@@ -143,7 +143,7 @@ input:focus {
 }
 
 .click {
-  background: #dc961c;
+  background: #dc991c;
   border: none;
   text-decoration: none;
   color: #fff;

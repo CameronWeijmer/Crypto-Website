@@ -23,3 +23,24 @@ function currname() {
   const option = select.options[select.selectedIndex];
   document.getElementById("coin_name").innerText = " to " + option.text;
 }
+
+function calc() {
+  const select = document.getElementById("selectCurrencies");
+  const option = select.options[select.selectedIndex];
+  const coinId = option.value;
+  const url = `https://api.coingecko.com/api/v3/simple/price?ids=${coinId}&vs_currencies=usd`;
+  fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      let coin_price = data[coinId].usd;
+      let amount = parseInt(document.getElementById("input").value);
+      const result = amount / coin_price;
+      const resultText = document.getElementById("answer");
+      resultText.innerText = result;
+    })
+    .catch((err) => {
+      alert("At the momentan we are not able to proceed your request")
+    });
+}

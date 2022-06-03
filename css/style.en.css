@@ -175,6 +175,7 @@ nav img {
     overflow: hidden;
     transition: max-height 1s ease-in-out;
     flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   nav ul li {
@@ -195,11 +196,17 @@ nav img {
     display: block;
     filter: invert(1);
     height: 50px;
+    margin-top: 2rem;
+  }
+
+  .menuicon{
+    display: flex;
+    justify-content: space-evenly;
   }
 
   nav .btn {
     border: 1px solid #e3edef;
-    padding: 10px 30px;
+    padding: 6px 25px;
     border-radius: 30px;
     font-size: 20px;
   }

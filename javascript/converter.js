@@ -39,8 +39,11 @@ function calc() {
       const result = amount / coin_price;
       const resultText = document.getElementById("answer");
       resultText.innerText = result;
-    })
-    .catch((err) => {
-      alert("At the momentan we are not able to proceed your request")
     });
+
+  if (!input.value.length || !select.value.length) {
+    const fail = "Please fill out all of the Boxes...";
+    const resultText = document.getElementById("answer");
+    resultText.innerText = fail;
+  }
 }

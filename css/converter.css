@@ -111,6 +111,7 @@ nav img {
   margin-top: 25px;
 }
 
+select,
 input {
   display: block;
   padding: 10px 0 10px;
@@ -127,7 +128,6 @@ button {
   width: 100%;
   height: 75px;
   margin-bottom: 25px;
-  font-family: "Helvetica Neue";
   font-size: 18px;
 }
 

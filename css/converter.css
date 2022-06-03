@@ -17,7 +17,6 @@ html {
 
 body {
   background-color: #0f002b;
-    
 }
 
 nav {
@@ -104,7 +103,7 @@ nav img {
 .head {
   width: 100%;
   text-align: center;
-  background: #222222;
+  background: #dc961c;
   color: #ffffff;
   padding: 10px 0 10px;
   margin-bottom: 25px;
@@ -120,6 +119,10 @@ input {
   text-align: center;
   height: 60px;
   font-size: 28px;
+}
+
+select {
+  cursor: pointer;
 }
 
 button {
@@ -140,26 +143,33 @@ input:focus {
 }
 
 .click {
-  background: #4190a9;
+  background: #dc961c;
   border: none;
   text-decoration: none;
   color: #fff;
 }
 
 .click:hover {
-  background: #cccccc;
+  background: #dcac1c;
 }
 
 .result {
   float: left;
   width: 100%;
-  background: #dedede;
+  background: #fff;
   height: 75px;
   font-size: 28px;
-  font-weight: bolder;
   padding-bottom: 15px;
 }
 
 .result p {
   text-align: center;
+}
+
+#answer {
+  padding-top: 1rem;
+}
+
+::placeholder {
+  color: #000;
 }

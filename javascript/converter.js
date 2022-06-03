@@ -6,7 +6,7 @@ fetch(
 )
   .then((res) => res.json())
   .then((data) => {
-    select.innerHTML = "";
+    // select.innerHTML = "";
     data.forEach((coin) => {
       const option = document.createElement("option");
       option.value = coin.id;
@@ -21,5 +21,5 @@ fetch(
 function currname() {
   const select = document.getElementById("selectCurrencies");
   const option = select.options[select.selectedIndex];
-  document.getElementById("coin_name").innerText = option.text;
+  document.getElementById("coin_name").innerText = " to " + option.text;
 }

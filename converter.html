@@ -31,13 +31,14 @@
             <h1>CRYPTO CONVERTER</h1>
         </div>
         <div class="input-field">
-            <input type="number" id="input" autocomplete="off" placeholder="Enter a amount" />
-            <select type="number" id="selectCurrencies" autocomplete="off" placeholder="Enter a Currencie" onchange="currname()">
-                <option value="ETH">Ethereum</option>
+            <input type="number" id="input" autocomplete="off" placeholder="Enter a amount in USD" required />
+            <select type="number" id="selectCurrencies" autocomplete="off" placeholder="Enter a Currency"
+                onchange="currname()" required>
+                <option value="" disabled selected>Select a Cryptocurrency</option>
             </select>
         </div>
         <div class="button">
-            <button class="click">Click to Convert to <span id="coin_name" </span></button>
+            <button class="click">Click to Convert<span id="coin_name" </span></button>
         </div>
         <div class="result clearfix">
             <p id="answer">00</p>

@@ -31,6 +31,7 @@
             <h1>CRYPTO CONVERTER</h1>
         </div>
         <div class="input-field">
+            <input type="number" id="input" autocomplete="off" placeholder="Enter a Currency e.g. usd" required />
             <input type="number" id="input" autocomplete="off" placeholder="Enter a amount in USD" required />
             <select type="number" id="selectCurrencies" autocomplete="off" placeholder="Enter a Currency"
                 onchange="currname()" required>
@@ -40,8 +41,8 @@
         <div class="button">
             <button class="click" onclick="calc()">Click to Convert<span id="coin_name" </span></button>
         </div>
-        <div class="result clearfix">
-            <p id="answer">00</p>
+        <div id="result">
+            <p id="answer"></p>
         </div> <!-- end container -->
     </div>
     <!-- End of Converter -->

@@ -153,13 +153,14 @@ input:focus {
   background: #dcac1c;
 }
 
-.result {
+#result {
   float: left;
   width: 100%;
   background: #fff;
   height: 75px;
   font-size: 28px;
   padding-bottom: 15px;
+  visibility: hidden;
 }
 
 .result p {
@@ -168,6 +169,8 @@ input:focus {
 
 #answer {
   padding-top: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 ::placeholder {

@@ -26,6 +26,7 @@ function currname() {
 
 function calc() {
   const select = document.getElementById("selectCurrencies");
+  const input = document.getElementById("input");
   const option = select.options[select.selectedIndex];
   const coinId = option.value;
   const url = `https://api.coingecko.com/api/v3/simple/price?ids=${coinId}&vs_currencies=usd`;
@@ -39,9 +40,12 @@ function calc() {
       const result = amount / coin_price;
       const resultText = document.getElementById("answer");
       resultText.innerText = result;
+      const showBox = document.getElementById("result");
+      showBox.style.visibility = "visible";
     });
 
-  if (!input.value.length || !select.value.length) {
+  debugger;
+  if (input.value.length == 0 || !select.value) {
     const fail = "Please fill out all of the Boxes...";
     const resultText = document.getElementById("answer");
     resultText.innerText = fail;

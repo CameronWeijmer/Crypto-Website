@@ -90,7 +90,7 @@ nav img {
   padding-left: 1rem;
 }
 
-.dropdown{
+.dropdown {
   visibility: hidden;
 }
 
@@ -206,21 +206,25 @@ nav img {
     display: none;
   }
 
+  .btn_navigation{
+    padding-top: .5rem;
+  }
+
   #img_menu_icon {
-    display: block;
-    filter: invert(1);
     height: 50px;
-    margin-top: 2rem;
+  }
+
+  .dropdown {
+    visibility: visible;
   }
 
   .menuicon {
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
 
   .site {
-    padding-top: 0rem;
+    padding-top: 2rem;
   }
 
   #title {
@@ -231,7 +235,7 @@ nav img {
   }
 
   #desc {
-    padding-top: 2rem;
+    padding-top: 1rem;
     line-height: 1.25rem;
   }
 

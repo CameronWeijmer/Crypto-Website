@@ -49,7 +49,6 @@ function calc() {
       showBox.style.visibility = "visible";
     })
     .catch((err) => {
-      const fail = "Unknown Error, please try again";
       const resultText = document.getElementById("answer");
       resultText.innerText = err;
     });

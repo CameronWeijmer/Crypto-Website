@@ -27,14 +27,18 @@
           <li><a href="converter.html">Converter</a></li>
         </ul>
         <div class="menuicon">
-          <img
-            id="img_menu_icon"
-            src="./assets/menu_icon.png"
-            alt="Dropdown-menu"
-            height="20"
-            onclick="togglemenu()"
-          />
-          <a href="index.de.html" class="btn">DE</a>
+          <div class="dropdown">
+            <img
+              id="img_menu_icon"
+              src="./assets/menu_icon.png"
+              alt="Dropdown-menu"
+              height="20"
+              onclick="togglemenu()"
+            />
+          </div>
+          <div class="btn_navigation">
+            <a href="index.de.html" class="btn">DE</a>
+          </div>
         </div>
       </nav>
     </div>
@@ -56,8 +60,8 @@
             Welcome to the official Cryptostats website, the most accurate coin
             tracker.<br />
             <span id="span_desc"
-              >The whole team wishes you success in tracking <br id="br_id">and analyzing your
-              coins.</span
+              >The whole team wishes you success in tracking
+              <br id="br_id" />and analyzing your coins.</span
             >
           </p>
         </div>

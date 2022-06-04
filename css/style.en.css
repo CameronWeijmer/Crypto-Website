@@ -47,7 +47,7 @@ nav ul {
 }
 
 a {
-  margin: 2rem;
+  margin: 3rem;
   justify-content: space-evenly;
   color: #e3edef;
   transition: color 0.5s linear;
@@ -90,11 +90,14 @@ nav img {
   padding-left: 1rem;
 }
 
+.dropdown{
+  visibility: hidden;
+}
+
 #img_menu_icon {
   width: 100;
   cursor: pointer;
   filter: invert(1);
-  display: none;
 }
 
 #title {
@@ -213,6 +216,7 @@ nav img {
   .menuicon {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 5rem;
   }
 
   .site {

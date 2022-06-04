@@ -7,11 +7,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
@@ -81,7 +81,7 @@ nav .btn {
   transition: border 0.5s linear;
 }
 
-nav .btn:hover{
+nav .btn:hover {
   border: 1px solid #dc961c;
 }
 
@@ -151,7 +151,7 @@ nav img {
   border-radius: 50%;
 }
 
-#title_btc{
+#title_btc {
   display: flex;
   justify-content: center;
   padding-top: 3.5rem;
@@ -159,7 +159,7 @@ nav img {
   font-size: 2.5rem;
 }
 
-#bitcoin_price{
+#bitcoin_price {
   display: flex;
   justify-content: center;
   padding: 1rem 1rem 0rem 0rem;
@@ -167,6 +167,14 @@ nav img {
 }
 
 @media only screen and (max-width: 700px) {
+
+  body {
+    background-image: url("../assets/background_mobile.png");
+    background-position: center;
+    background-position-x: 70%;
+    background-position-y: 15px;
+  }
+
   nav ul {
     width: 100%;
     position: absolute;
@@ -177,6 +185,7 @@ nav img {
     transition: max-height 1s ease-in-out;
     flex-direction: column;
   }
+
   nav ul li {
     display: block;
     margin-top: 10px;
@@ -199,7 +208,5 @@ nav img {
     border-radius: 30px;
     font-size: 20px;
   }
-  body {
-    background-image: url("../assets/background.png");
-  }
+
 }

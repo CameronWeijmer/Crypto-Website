@@ -174,7 +174,10 @@ nav img {
 
 @media only screen and (max-width: 700px) {
   body {
-    background-image: url("../assets/background.png");
+    background-image: url("../assets/background_mobile.png");
+    background-position: center;
+    background-position-x: 70%;
+    background-position-y: 15px;
   }
 
   nav ul {
@@ -206,7 +209,7 @@ nav img {
     display: none;
   }
 
-  .btn_navigation{
+  .btn_navigation {
     padding-top: .5rem;
   }
 

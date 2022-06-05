@@ -52,7 +52,7 @@ function togglemenu() {
     menuList.style.maxHeight = "500px";
     menuList.style.visibility = "visible";
     content_block.style.visibility = "hidden";
-    body.style.backgroundImage = "url('../assets/background_mobile.png')";
+    body.style.backgroundImage = "url('assets/background_mobile.png')";
     body.style.backgroundPosition = "center";
     body.style.backgroundPositionX = "70%";
     body.style.backgroundPositionY = "15px";

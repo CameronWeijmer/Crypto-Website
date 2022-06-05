@@ -26,7 +26,7 @@ fetch(`${proxyUrl}${baseUrl}`, {
         coinsData.forEach((coin) => {
           coinlist += "<tr>";
           coinlist += `<td id="coin_name"> ${coin.name}</td>`;
-          coinlist += `<td> $${coin.price}</td>`;
+          coinlist += `<td> $${parseFloat(coin.price).toFixed(3)}</td>`;
           coinlist += `<td> ${coin["24hVolume"]} </td>`;
           coinlist += `<td> ${coin.symbol} </td>`;
           coinlist += `<td> ${coin.rank} </td>`;

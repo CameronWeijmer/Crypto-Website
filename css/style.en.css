@@ -81,6 +81,10 @@ nav .btn {
   transition: border 0.5s linear;
 }
 
+.btn_navigation {
+  padding-top: .5rem;
+}
+
 nav .btn:hover {
   border: 1px solid #dc961c;
 }
@@ -172,6 +176,7 @@ nav img {
   display: none;
 }
 
+/* Mobile view */
 @media only screen and (max-width: 700px) {
   body {
     background-image: url("../assets/background_mobile.png");
@@ -207,10 +212,6 @@ nav img {
 
   .logo {
     display: none;
-  }
-
-  .btn_navigation {
-    padding-top: .5rem;
   }
 
   #img_menu_icon {

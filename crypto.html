@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/crypto.css" />
 
-    <title>Crypto</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/crypto.css" />
+  <title>Crypto</title>
+
+<body id="body">
+  <div class="container">
+    <nav>
+      <a id="backlink" href="index.html">
+        <img src="./assets/coin_logo.png" alt="Logo" class="logo" height="100" />
+      </a>
+      <ul id="menuList">
+        <li><a href="crypto.html">Crypto</a></li>
+        <li><a href="#">Bitcoin</a></li>
+        <li><a href="#">Ethereum</a></li>
+        <li><a href="converter.html">Converter</a></li>
+      </ul>
+      <div class="menuicon">
+        <div class="dropdown">
+          <img id="img_menu_icon" src="./assets/menu_icon.png" alt="Dropdown-menu" height="20" onclick="togglemenu()" />
+        </div>
+      </div>
+  </div>
   </head>
-  <body>
+
+  <div id="content_block">
     <table>
-      <caption>
-        Crypto Tracker
-      </caption>
       <thead id="head">
         <tr>
           <th scope="col">Coin Name</th>
@@ -25,6 +42,8 @@
       </thead>
       <tbody id="content"></tbody>
     </table>
-    <script src="./javascript/crypto.js"></script>
-  </body>
+  </div>
+  <script src="./javascript/crypto.js"></script>
+</body>
+
 </html>

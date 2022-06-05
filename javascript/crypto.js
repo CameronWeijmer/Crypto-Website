@@ -15,9 +15,9 @@ fetch(`${proxyUrl}${baseUrl}`, {
 })
   .then((response) => {
     if (response.ok) {
-      response.json().then((json) => {
-        console.log(json.data);
-        let coinsData = json.data.coins;
+      response.json().then((data) => {
+        console.log(data.data);
+        let coinsData = data.data.coins;
 
         if (coinsData.length > 0) {
           var coinlist = "";
@@ -39,3 +39,32 @@ fetch(`${proxyUrl}${baseUrl}`, {
   .catch((error) => {
     console.log(error);
   });
+
+let menuList = document.getElementById("menuList");
+const content_block = document.getElementById("content_block");
+const body = document.getElementById("body");
+
+menuList.style.maxHeight = "0px";
+
+// Function to toggle the menulist
+function togglemenu() {
+  if (menuList.style.maxHeight == "0px") {
+    menuList.style.maxHeight = "500px";
+    menuList.style.visibility = "visible";
+    content_block.style.visibility = "hidden";
+    body.style.backgroundImage = "url('../assets/background_mobile.png')";
+    body.style.backgroundPosition = "center";
+    body.style.backgroundPositionX = "70%";
+    body.style.backgroundPositionY = "15px";
+    body.style.backgroundRepeat = "no-repeat";
+  } else {
+    body.style.backgroundImage = "none";
+    content_block.style.visibility = "visible";
+    menuList.style.visibility = "hidden";
+    menuList.style.maxHeight = "0px";
+  }
+}
+
+// background-position: center;
+// background-position-x: 70%;
+// background-position-y: 15px;

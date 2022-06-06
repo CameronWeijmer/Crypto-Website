@@ -42,12 +42,12 @@ nav ul {
   flex-direction: row;
   justify-content: center;
   margin-right: 2rem;
-  list-style-type: none;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 a {
-  margin: 2rem;
+  margin: 3rem;
   justify-content: space-evenly;
   color: #e3edef;
   transition: color 0.5s linear;
@@ -81,6 +81,10 @@ nav .btn {
   transition: border 0.5s linear;
 }
 
+.btn_navigation {
+  padding-top: .5rem;
+}
+
 nav .btn:hover {
   border: 1px solid #dc961c;
 }
@@ -90,11 +94,14 @@ nav img {
   padding-left: 1rem;
 }
 
+.dropdown {
+  visibility: hidden;
+}
+
 #img_menu_icon {
   width: 100;
   cursor: pointer;
   filter: invert(1);
-  display: none;
 }
 
 #title {
@@ -102,7 +109,6 @@ nav img {
   font-size: 4rem;
   line-height: 4rem;
   word-spacing: 0.5rem;
-  padding-top: 5rem;
 }
 
 #desc {
@@ -134,7 +140,7 @@ nav img {
   justify-content: left;
   align-items: left;
   margin-left: 4%;
-  padding-top: 1rem;
+  padding-top: 5rem;
 }
 
 .btc_checker_div {
@@ -166,8 +172,12 @@ nav img {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 700px) {
+#br_id {
+  display: none;
+}
 
+/* Mobile view */
+@media only screen and (max-width: 700px) {
   body {
     background-image: url("../assets/background_mobile.png");
     background-position: center;
@@ -184,6 +194,7 @@ nav img {
     overflow: hidden;
     transition: max-height 1s ease-in-out;
     flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   nav ul li {
@@ -192,21 +203,83 @@ nav img {
     margin-bottom: 10px;
   }
 
+  nav .btn {
+    border: 1px solid #e3edef;
+    padding: 6px 25px;
+    border-radius: 30px;
+    font-size: 20px;
+  }
+
   .logo {
     display: none;
   }
 
   #img_menu_icon {
-    display: block;
-    filter: invert(1);
     height: 50px;
   }
 
-  nav .btn {
-    border: 1px solid #e3edef;
-    padding: 10px 30px;
-    border-radius: 30px;
-    font-size: 20px;
+  .dropdown {
+    visibility: visible;
+  }
+
+  .menuicon {
+    display: flex;
+    padding-top: 2rem;
+  }
+
+  .site {
+    padding-top: 2rem;
+  }
+
+  #title {
+    color: #e3edef;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    word-spacing: 0.5rem;
+  }
+
+  #desc {
+    padding-top: 1rem;
+    line-height: 1.25rem;
+  }
+
+  #span_desc {
+    line-height: 1.25rem;
+  }
+
+  #br_id {
+    display: block;
+  }
+
+  .btc_bubble {
+    border: solid #dc961c 2px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding-left: 5rem;
+  }
+
+  .btc_checker_div {
+    color: #e3edef;
+    display: flex;
+    justify-content: center;
+    padding: 8rem 0rem 0rem 0rem
+  }
+
+  #title_btc {
+    display: flex;
+    justify-content: right;
+    padding-top: 2rem;
+    padding-right: .75rem;
+    color: #dc961c;
+    font-size: 2rem;
+  }
+
+  #bitcoin_price {
+    display: flex;
+    justify-content: right;
+    padding: 0rem 1.5rem 0rem 0rem;
+    font-size: 1.5rem;
   }
 
 }

@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.de.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.de.css" />
     <title>Crypto Stats</title>
 </head>
 
 <body>
     <!-- Start of navigation -->
-
     <div class="container">
         <nav>
-            <a id="backlink" href="index.de.html">
-                <img src="./assets/coin_logo.png" alt="Logo" class="logo" height="100">
+            <a id="backlink" href="index.html">
+                <img src="./assets/coin_logo.png" alt="Logo" class="logo" height="100" />
             </a>
             <ul id="menuList">
                 <li><a href="crypto.html">Krypto</a></li>
@@ -23,24 +22,36 @@
                 <li><a href="#">Ethereum</a></li>
                 <li><a href="converter.html">Konverter</a></li>
             </ul>
-            <img id="img_menu_icon" src="./assets/menu_icon.png" alt="Dropdown-menu" height="20" onclick="togglemenu()">
-            <a href="index.html" class="btn">EN</a>
+            <div class="menuicon">
+                <div class="dropdown">
+                    <img id="img_menu_icon" src="./assets/menu_icon.png" alt="Dropdown-menu" height="20"
+                        onclick="togglemenu()" />
+                </div>
+                <div class="btn_navigation">
+                    <a href="index.html" class="btn">EN</a>
+                </div>
+            </div>
         </nav>
     </div>
     <!-- End of navigation -->
     <!-- Start of title and desc -->
-
     <div class="site">
-        <div class="title_div">
-            <h1 id="title">Konvertiere <span id="and_span">&<br></span> Beobachte<br><span id="crypto_span">
-                    Krypto</span>
-            </h1>
+        <div id="content_block">
+            <div class="title_div">
+                <h1 id="title">
+                    Konvertiere <span id="and_span">&</span> Beobachte<br /><span id="crypto_span">
+                        Krypto</span>
+                </h1>
+            </div>
+            <div class="desc_div">
+                <p id="desc">
+                    Willkommen auf der offiziellen Website von Cryptostats, dem genauesten Coin-Tracker<br />
+                    <span id="span_desc">Das gesamte Team wünscht Ihnen viel Erfolg beim Tracken und analysieren Ihrer
+                        Coins
+                    </span>
+                </p>
+            </div>
         </div>
-        <p id="desc">
-            Willkommen auf der offiziellen Website von Cryptostats, dem genauesten Coin-Tracker.<br>
-            <span id="span_desc">Das gesamte Team wünscht Ihnen viel Erfolg beim Tracken und analysieren Ihrer
-                Coins.</span>
-        </p>
         <!-- End of title and desc -->
         <!-- Start of bitcoin price -->
         <div class="btc_checker_div">
@@ -50,7 +61,6 @@
             </div>
         </div>
     </div>
-
     <!-- End of bitcoin price -->
     <!-- Site Settings -->
     <script src="./javascript/index.js"></script>

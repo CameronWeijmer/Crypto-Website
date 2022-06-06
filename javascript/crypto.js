@@ -64,7 +64,3 @@ function togglemenu() {
     menuList.style.maxHeight = "0px";
   }
 }
-
-// background-position: center;
-// background-position-x: 70%;
-// background-position-y: 15px;

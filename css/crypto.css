@@ -137,6 +137,11 @@ nav img {
     filter: invert(1);
 }
 
+#info {
+    color: #cc2424;
+    cursor: help;
+}
+
 
 @media screen and (max-width: 600px) {
 

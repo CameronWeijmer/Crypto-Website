@@ -97,7 +97,9 @@ nav img {
 
 .container {
   width: 50%;
-  margin: 0 auto;
+  position: absolute;
+  top: 20%;
+  left: 25%;
 }
 
 .head {

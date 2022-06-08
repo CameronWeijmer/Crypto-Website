@@ -47,7 +47,7 @@ nav ul {
 }
 
 a {
-  margin: 3rem;
+  margin: 1rem;
   justify-content: space-evenly;
   color: #e3edef;
   transition: color 0.5s linear;

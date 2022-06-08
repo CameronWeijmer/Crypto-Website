@@ -59,7 +59,7 @@ a:hover {
 
 nav ul li {
   letter-spacing: 0.25rem;
-  margin: 10px 20px;
+  margin: 10px -10px;
 }
 
 nav ul li a {

@@ -6,7 +6,7 @@ menuList.style.maxHeight = "0px";
 // Function to toggle the menulist
 function togglemenu() {
   if (menuList.style.maxHeight == "0px") {
-    menuList.style.maxHeight = "200px";
+    menuList.style.maxHeight = "500px";
     menuList.style.visibility = "visible";
     content_block.style.visibility = "hidden";
   } else {

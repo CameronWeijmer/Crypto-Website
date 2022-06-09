@@ -177,6 +177,14 @@ input:focus {
 }
 
 @media screen and (max-width: 700px) {
+  body {
+    background-image: url("../assets/background_mobile.png");
+    background-position: center;
+    background-position-x: 70%;
+    background-position-y: 15px;
+    background-repeat: no-repeat;
+  }
+
   nav ul {
     width: 100%;
     position: absolute;
@@ -219,5 +227,34 @@ input:focus {
     display: flex;
     justify-content: center;
     padding-top: 2rem;
+  }
+
+  #page_title {
+    font-size: 1rem;
+  }
+
+  .head {
+    width: 100%;
+    text-align: center;
+    background: #e89403;
+    color: #ffffff;
+    padding: 10px 0 10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .container {
+    width: 70%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+  }
+
+  .click {
+    font-size: 1rem;
+  }
+
+  button {
+    height: 50px;
   }
 }

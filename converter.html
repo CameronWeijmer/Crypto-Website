@@ -30,24 +30,26 @@
     </div>
     <!-- End of navigation -->
     <!-- Start of Converter -->
-    <div class="container">
-        <div class="head">
-            <h1>CRYPTO CONVERTER</h1>
+    <div id="content_block">
+        <div class="container">
+            <div class="head">
+                <h1 id="page_title">CRYPTO CONVERTER</h1>
+            </div>
+            <div class="input-field">
+                <input type="text" id="curreny" autocomplete="off" placeholder="Enter a Currency e.g. usd" required />
+                <input type="number" id="input" autocomplete="off" placeholder="Enter a amount" required />
+                <select type="text" id="selectCurrencies" autocomplete="off" placeholder="Select a Currency"
+                    onchange="currname()" required>
+                    <option value="" disabled selected>Select a Cryptocurrency</option>
+                </select>
+            </div>
+            <div class="button">
+                <button class="click" onclick="calc()">Click to Convert<span id="coin_name" </span></button>
+            </div>
+            <div id="result">
+                <p id="answer"></p>
+            </div> <!-- end container -->
         </div>
-        <div class="input-field">
-            <input type="text" id="curreny" autocomplete="off" placeholder="Enter a Currency e.g. usd" required />
-            <input type="number" id="input" autocomplete="off" placeholder="Enter a amount" required />
-            <select type="text" id="selectCurrencies" autocomplete="off" placeholder="Select a Currency"
-                onchange="currname()" required>
-                <option value="" disabled selected>Select a Cryptocurrency</option>
-            </select>
-        </div>
-        <div class="button">
-            <button class="click" onclick="calc()">Click to Convert<span id="coin_name" </span></button>
-        </div>
-        <div id="result">
-            <p id="answer"></p>
-        </div> <!-- end container -->
     </div>
     <!-- End of Converter -->
     <script src="./javascript/converter.js"></script>

@@ -77,15 +77,12 @@ function togglemenu() {
   if (menuList.style.maxHeight == "0px") {
     menuList.style.maxHeight = "500px";
     menuList.style.visibility = "visible";
-    content_block.style.visibility = "hidden";
     body.style.backgroundImage = "url('assets/background_mobile.png')";
     body.style.backgroundPosition = "center";
     body.style.backgroundPositionX = "70%";
     body.style.backgroundPositionY = "15px";
     body.style.backgroundRepeat = "no-repeat";
   } else {
-    body.style.backgroundImage = "none";
-    content_block.style.visibility = "visible";
     menuList.style.visibility = "hidden";
     menuList.style.maxHeight = "0px";
   }

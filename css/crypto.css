@@ -1,236 +1,234 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    background-image: url("../assets/background.png");
-    line-height: 1.25;
+  background-image: url("../assets/background.png");
+  line-height: 1.25;
 }
 
 table {
-    position: absolute;
-    left: 13%;
-    top: 15%;
-    border: 1px solid #0f002b;
-    border-collapse: collapse;
-    padding: 0;
-    width: 75%;
-    table-layout: fixed;
+  position: absolute;
+  left: 13%;
+  top: 15%;
+  border: 1px solid #0f002b;
+  border-collapse: collapse;
+  padding: 0;
+  width: 75%;
+  table-layout: fixed;
 }
 
 table caption {
-    font-size: 1.5em;
-    margin: .5em 0 .75em;
-    color: #fff
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+  color: #fff;
 }
 
 table tr {
-    background-color: #fff;
-    border: 1px solid #0f002b;
-    padding: .35em;
+  background-color: #fff;
+  border: 1px solid #0f002b;
+  padding: 0.35em;
 }
 
 table th,
 table td {
-    padding: .625em;
-    text-align: center;
+  padding: 0.625em;
+  text-align: center;
 }
 
 table th {
-    background-color: #000;
-    color: #fff;
-    font-size: .85em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 #coin_name {
-    background-color: #dc961c;
+  background-color: #dc961c;
 }
 
 nav {
-    width: 100%;
-    padding: 0.5rem 3rem 0rem 3rem;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  padding: 0.5rem 3rem 0rem 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 #backlink {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .logo {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 nav ul {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-right: 2rem;
-    flex-wrap: wrap;
-    list-style-type: none;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: 2rem;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 a {
-    margin: .5rem;
-    justify-content: space-evenly;
-    color: #e3edef;
-    transition: color 0.5s linear;
+  margin: 0.5rem;
+  justify-content: space-evenly;
+  color: #e3edef;
+  transition: color 0.5s linear;
 }
 
 a:hover {
-    color: #dc961c;
+  color: #dc961c;
 }
 
 nav ul li {
-    letter-spacing: 0.25rem;
-    margin: 10px 20px;
+  letter-spacing: 0.25rem;
+  margin: 10px 20px;
 }
 
 nav ul li a {
-    color: #e3edef;
-    font-size: 30px;
-    text-decoration: none;
+  color: #e3edef;
+  font-size: 30px;
+  text-decoration: none;
 }
 
 #menuList {
-    padding-top: 1rem;
+  padding-top: rem;
 }
 
 nav .btn {
-    color: #e3edef;
-    text-decoration: none;
-    border: 1px solid #e3edef;
-    padding: 8px 21px;
-    border-radius: 20px;
-    transition: border 0.5s linear;
+  color: #e3edef;
+  text-decoration: none;
+  border: 1px solid #e3edef;
+  padding: 8px 21px;
+  border-radius: 20px;
+  transition: border 0.5s linear;
 }
 
 .btn_navigation {
-    padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 nav .btn:hover {
-    border: 1px solid #dc961c;
+  border: 1px solid #dc961c;
 }
 
 nav img {
-    padding-right: 2.5rem;
-    padding-left: 1rem;
+  padding-right: 2.5rem;
+  padding-left: 1rem;
 }
 
 .dropdown {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #img_menu_icon {
-    width: 100;
-    cursor: pointer;
-    filter: invert(1);
+  width: 100;
+  cursor: pointer;
+  filter: invert(1);
 }
 
 #info {
-    color: #cc2424;
-    cursor: help;
+  color: #cc2424;
+  cursor: help;
 }
 
-
 @media screen and (max-width: 700px) {
+  #info {
+    color: #cc2424;
+  }
 
-    #info {
-        color: #cc2424;
-    }
+  table {
+    border: 0;
+  }
 
-    table {
-        border: 0;
-    }
+  table caption {
+    font-size: 1.3em;
+  }
 
-    table caption {
-        font-size: 1.3em;
-    }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
 
-    table thead {
-        border: none;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-    }
+  table tr {
+    border-bottom: 3px solid #0f002b;
+    display: block;
+    margin-bottom: 0.625em;
+  }
 
-    table tr {
-        border-bottom: 3px solid #0f002b;
-        display: block;
-        margin-bottom: .625em;
-    }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
 
-    table td {
-        border-bottom: 1px solid #ddd;
-        display: block;
-        font-size: .8em;
-        text-align: right;
-    }
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-    table td::before {
-        content: attr(data-label);
-        float: left;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
+  table td:last-child {
+    border-bottom: 0;
+  }
 
-    table td:last-child {
-        border-bottom: 0;
-    }
+  nav ul {
+    width: 100%;
+    position: absolute;
+    top: 140px;
+    right: 0;
+    z-index: 2;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 
-    nav ul {
-        width: 100%;
-        position: absolute;
-        top: 140px;
-        right: 0;
-        z-index: 2;
-        overflow: hidden;
-        transition: max-height 1s ease-in-out;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-    nav ul li {
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+  nav .btn {
+    border: 1px solid #e3edef;
+    padding: 6px 25px;
+    border-radius: 30px;
+    font-size: 20px;
+  }
 
-    nav .btn {
-        border: 1px solid #e3edef;
-        padding: 6px 25px;
-        border-radius: 30px;
-        font-size: 20px;
-    }
+  .logo {
+    display: none;
+  }
 
-    .logo {
-        display: none;
-    }
+  #img_menu_icon {
+    height: 50px;
+  }
 
-    #img_menu_icon {
-        height: 50px;
-    }
+  .dropdown {
+    visibility: visible;
+  }
 
-    .dropdown {
-        visibility: visible;
-    }
-
-    .menuicon {
-        display: flex;
-        padding-top: 2rem;
-    }
+  .menuicon {
+    display: flex;
+    padding-top: 2rem;
+  }
 }

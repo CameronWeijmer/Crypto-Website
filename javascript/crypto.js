@@ -58,7 +58,6 @@ function togglemenu() {
     body.style.backgroundPositionY = "15px";
     body.style.backgroundRepeat = "no-repeat";
   } else {
-    body.style.backgroundImage = "none";
     content_block.style.visibility = "visible";
     menuList.style.visibility = "hidden";
     menuList.style.maxHeight = "0px";

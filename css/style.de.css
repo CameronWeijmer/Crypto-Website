@@ -68,10 +68,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-#menuList {
-  padding-top: 1rem;
-}
-
 nav .btn {
   color: #e3edef;
   text-decoration: none;
@@ -283,6 +279,6 @@ nav img {
   }
 
   #menuList {
-    padding-top: 0rem;
+    padding-left: 1rem;
   }
 }

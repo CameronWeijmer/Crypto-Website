@@ -101,10 +101,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-#menuList {
-  padding-top: rem;
-}
-
 nav .btn {
   color: #e3edef;
   text-decoration: none;
@@ -221,6 +217,10 @@ nav img {
 
   #img_menu_icon {
     height: 50px;
+  }
+
+  #menuList {
+    padding-left: 1rem;
   }
 
   .dropdown {

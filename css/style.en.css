@@ -68,10 +68,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-#menuList {
-  padding-top: 0rem;
-}
-
 nav .btn {
   color: #e3edef;
   text-decoration: none;
@@ -82,7 +78,7 @@ nav .btn {
 }
 
 .btn_navigation {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 nav .btn:hover {
@@ -263,14 +259,14 @@ nav img {
     color: #e3edef;
     display: flex;
     justify-content: center;
-    padding: 8rem 0rem 0rem 0rem
+    padding: 8rem 0rem 0rem 0rem;
   }
 
   #title_btc {
     display: flex;
     justify-content: right;
     padding-top: 2rem;
-    padding-right: .75rem;
+    padding-right: 0.75rem;
     color: #dc961c;
     font-size: 2rem;
   }
@@ -282,4 +278,7 @@ nav img {
     font-size: 1.5rem;
   }
 
+  #menuList {
+    padding-left: 1rem;
+  }
 }

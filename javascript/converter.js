@@ -23,6 +23,7 @@ function currname() {
   document.getElementById("coin_name").innerText = " to " + option.text;
 }
 
+// Calculates currency
 function calc() {
   const getText = document.getElementById("curreny").value;
   let currency = getText.toLowerCase();
@@ -53,9 +54,39 @@ function calc() {
       resultText.innerText = err;
     });
 
-  if (input.value.length == 0 || !select.value || !currency.value.length) {
+  // Validation
+  if (
+    input.value.length == 0 ||
+    select.value.length == 0 ||
+    currency.value.length == 0
+  ) {
     const fail = "Please fill out all of the Boxes...";
     const resultText = document.getElementById("answer");
     resultText.innerText = fail;
+  }
+}
+
+let menuList = document.getElementById("menuList");
+const content_block = document.getElementById("content_block");
+const body = document.getElementById("body");
+
+menuList.style.maxHeight = "0px";
+
+// Function to toggle the menulist
+function togglemenu() {
+  if (menuList.style.maxHeight == "0px") {
+    menuList.style.maxHeight = "500px";
+    menuList.style.visibility = "visible";
+    content_block.style.visibility = "hidden";
+    body.style.backgroundImage = "url('assets/background_mobile.png')";
+    body.style.backgroundPosition = "center";
+    body.style.backgroundPositionX = "70%";
+    body.style.backgroundPositionY = "15px";
+    body.style.backgroundRepeat = "no-repeat";
+  } else {
+    body.style.backgroundImage = "none";
+    content_block.style.visibility = "visible";
+    menuList.style.visibility = "hidden";
+    menuList.style.maxHeight = "0px";
   }
 }

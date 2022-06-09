@@ -17,6 +17,7 @@ html {
 
 body {
   background-image: url("../assets/background.png");
+  min-height: 100vh;
 }
 
 nav {
@@ -177,4 +178,48 @@ input:focus {
 
 ::placeholder {
   color: #000;
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    position: absolute;
+    top: 140px;
+    right: 0;
+    z-index: 2;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav .btn {
+    border: 1px solid #e3edef;
+    padding: 6px 25px;
+    border-radius: 30px;
+    font-size: 20px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  #img_menu_icon {
+    height: 50px;
+  }
+
+  .dropdown {
+    visibility: visible;
+  }
+
+  .menuicon {
+    display: flex;
+    padding-top: 2rem;
+  }
 }

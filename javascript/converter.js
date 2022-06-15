@@ -48,22 +48,23 @@ function calc() {
       }
       const showBox = document.getElementById("result");
       showBox.style.visibility = "visible";
+
+      // Validation
+      if (
+        input.value.length == 0 ||
+        select.value == "" ||
+        !currency.value ||
+        currency == NaN
+      ) {
+        const fail = "Please fill out all of the Boxes...";
+        const resultText = document.getElementById("answer");
+        resultText.innerText = fail;
+      }
     })
     .catch((err) => {
       const resultText = document.getElementById("answer");
       resultText.innerText = err;
     });
-
-  // Validation
-  if (
-    input.value.length == 0 ||
-    select.value.length == 0 ||
-    currency.value.length == 0
-  ) {
-    const fail = "Please fill out all of the Boxes...";
-    const resultText = document.getElementById("answer");
-    resultText.innerText = fail;
-  }
 }
 
 let menuList = document.getElementById("menuList");

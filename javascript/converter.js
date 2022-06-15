@@ -53,8 +53,7 @@ function calc() {
       if (
         input.value.length == 0 ||
         select.value == "" ||
-        !currency.value ||
-        currency == NaN
+        currency.value == ""
       ) {
         const fail = "Please fill out all of the Boxes...";
         const resultText = document.getElementById("answer");

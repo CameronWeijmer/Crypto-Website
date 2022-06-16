@@ -48,7 +48,6 @@ function calc() {
       }
       const showBox = document.getElementById("result");
       showBox.style.visibility = "visible";
-
       // Validation
       if (
         input.value.length == 0 ||

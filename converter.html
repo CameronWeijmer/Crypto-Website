@@ -37,7 +37,7 @@
             </div>
             <div class="input-field">
                 <input type="text" id="curreny" autocomplete="off" placeholder="Enter a Currency e.g. usd" required />
-                <input type="number" id="input" autocomplete="off" placeholder="Enter a amount" required />
+                <input type="number" id="input" autocomplete="off" placeholder="Enter a amount" required min="0" max="999999"/>
                 <select type="text" id="selectCurrencies" autocomplete="off" placeholder="Select a Currency"
                     onchange="currname()" required>
                     <option id="option_curr" value="" disabled selected>Select a Cryptocurrency</option>

@@ -41,23 +41,19 @@ function calc() {
       let amount = parseInt(document.getElementById("input").value);
       const result = amount / coin_price;
       const resultText = document.getElementById("answer");
-      if (coinId == "bitcoin") {
-        resultText.innerText = result.toFixed(6) + " " + coinId.toUpperCase();
+      if (!isNaN(result)) {
+        if (coinId == "bitcoin") {
+          resultText.innerText = result.toFixed(6) + " " + coinId.toUpperCase();
+        } else {
+          resultText.innerText = result.toFixed(4) + " " + coinId.toUpperCase();
+        }
       } else {
-        resultText.innerText = result.toFixed(4) + " " + coinId.toUpperCase();
-      }
-      const showBox = document.getElementById("result");
-      showBox.style.visibility = "visible";
-      // Validation
-      if (
-        input.value.length == 0 ||
-        select.value == "" ||
-        currency.value == ""
-      ) {
         const fail = "Please fill out all of the Boxes...";
         const resultText = document.getElementById("answer");
         resultText.innerText = fail;
       }
+      const showBox = document.getElementById("result");
+      showBox.style.visibility = "visible";
     })
     .catch((err) => {
       const resultText = document.getElementById("answer");

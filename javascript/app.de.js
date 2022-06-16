@@ -1,5 +1,6 @@
 let btc = document.getElementById("bitcoin_price");
 
+// gets bitcoin price in euro
 fetch(
   "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=eur"
 )

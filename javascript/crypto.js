@@ -22,7 +22,7 @@ fetch(`${proxyUrl}${baseUrl}`, {
         if (coinsData.length > 0) {
           var coinlist = "";
         }
-
+        // loop through each coin for single details
         coinsData.forEach((coin) => {
           coinlist += "<tr>";
           coinlist += `<td id="coin_name"> ${coin.name}</td>`;
@@ -36,6 +36,7 @@ fetch(`${proxyUrl}${baseUrl}`, {
       });
     }
   })
+  // catching general error
   .catch((error) => {
     console.log(error);
   });

@@ -1,6 +1,7 @@
 let coins = [];
 const select = document.getElementById("selectCurrencies");
 
+// gets coins
 fetch(
   "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
 )
@@ -41,13 +42,17 @@ function calc() {
       let amount = parseInt(document.getElementById("input").value);
       const result = amount / coin_price;
       const resultText = document.getElementById("answer");
+
+      // catching error
       if (!isNaN(result)) {
         if (coinId == "bitcoin") {
+          // if coin is Bitcoin more decimals are shown
           resultText.innerText = result.toFixed(6) + " " + coinId.toUpperCase();
         } else {
           resultText.innerText = result.toFixed(4) + " " + coinId.toUpperCase();
         }
       } else {
+        // catching error
         const fail = "Please fill out all of the Boxes...";
         const resultText = document.getElementById("answer");
         resultText.innerText = fail;
@@ -55,6 +60,7 @@ function calc() {
       const showBox = document.getElementById("result");
       showBox.style.visibility = "visible";
     })
+    // catching general errors
     .catch((err) => {
       const resultText = document.getElementById("answer");
       resultText.innerText = err;
@@ -64,7 +70,6 @@ function calc() {
 let menuList = document.getElementById("menuList");
 const content_block = document.getElementById("content_block");
 const body = document.getElementById("body");
-
 menuList.style.maxHeight = "0px";
 
 // Function to toggle the menulist

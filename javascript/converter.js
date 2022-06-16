@@ -39,7 +39,7 @@ function calc() {
     })
     .then((data) => {
       let coin_price = data[coinId][currency];
-      let amount = parseInt(document.getElementById("input").value);
+      let amount = Math.abs(parseInt(document.getElementById("input").value));
       const result = amount / coin_price;
       const resultText = document.getElementById("answer");
 

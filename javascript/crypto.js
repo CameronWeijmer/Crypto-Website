@@ -5,7 +5,7 @@ let apiKey = "coinranking4631015331570a2b80854ae86b90f47ec74781ca0d5b0927";
 let apiUrl = `${proxyUrl}${baseUrl}`;
 console.log(apiUrl);
 
-fetch(`${proxyUrl}${baseUrl}`, {
+fetch(apiUrl, {
   method: "GET",
   headers: {
     "Content-Type": "application/json",

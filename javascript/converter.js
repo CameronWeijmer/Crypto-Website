@@ -29,7 +29,6 @@ function calc() {
   const getText = document.getElementById("curreny").value;
   let currency = getText.toLowerCase();
   const select = document.getElementById("selectCurrencies");
-  const input = document.getElementById("input");
   const option = select.options[select.selectedIndex];
   const coinId = option.value;
   const url = `https://api.coingecko.com/api/v3/simple/price?ids=${coinId}&vs_currencies=${currency}`;
